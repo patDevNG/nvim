@@ -14,17 +14,14 @@ return {
 
   -- Configure LazyVim to load gruvbox
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
-
-  -- change trouble config
-  {
     "folke/trouble.nvim",
     -- opts will be merged with the parent spec
     opts = { use_diagnostic_signs = true },
+  },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    enabled = false,
   },
 
   -- disable trouble
